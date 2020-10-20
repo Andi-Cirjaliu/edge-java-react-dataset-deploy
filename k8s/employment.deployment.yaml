@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "react-java-s3-dataset-app"
+  name: react-java-s3-dataset-app
   labels:
     app: react-java-s3-dataset-app
 spec:
