@@ -44,6 +44,11 @@ public class DataSource {
         File f = new File(DATASET_URL);
         System.out.println("File " + DATASET_URL + " exists: " + f.exists());
         System.out.println("File " + DATASET_URL + " is file: " + f.isFile());
+        System.out.println("File " + DATASET_URL + " is absolute: " + f.isAbsolute());
+        System.out.println("File " + DATASET_URL + " path: " + f.getPath());
+        System.out.println("File " + DATASET_URL + " can read: " + f.canRead());
+        System.out.println("File " + DATASET_URL + " absolute path: " + f.getAbsolutePath());
+        System.out.println("File " + DATASET_URL + " absolute file: " + f.getAbsoluteFile());
         System.out.println("File " + DATASET_URL + " directory exists: " + new File("/home/student/projects/employment_dataset/employment-us/data").exists());
         System.out.println("File " + DATASET_URL + " files in directory: " + Arrays.toString(new File("/home/student/projects/employment_dataset/employment-us/data").list()));
         if ( f.exists() ) {
