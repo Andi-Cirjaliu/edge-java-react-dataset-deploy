@@ -34,7 +34,7 @@ RUN mkdir /opt/app
 COPY --from=builder /app/target/javaspringapp-1.0-SNAPSHOT.jar /opt/app/app.jar
 
 COPY aat1.csv /opt/app
-COPY /home/student/projects/employment_dataset /opt/app/employment_dataset
+COPY /home/student/projects/employment_dataset/* /opt/app/employment_dataset
 #ENV EMPLOYMENT_DATASET_URL /opt/app/aat1.csv
 ENV EMPLOYMENT_DATASET_URL /opt/app/employment_dataset/employment-us/data/aat1.csv
 
