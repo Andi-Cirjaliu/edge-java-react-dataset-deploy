@@ -1,10 +1,10 @@
 apiVersion: skaffold/v2beta7
 kind: Config
 metadata:
-  name: react-java-s3-dataset-app
+  name: react-java-dataset-app
 build:
   artifacts:
-  - image: react-java-s3-dataset-app
+  - image: react-java-dataset-app
     context: ./backend
     sync:
       infer:
@@ -15,7 +15,7 @@ deploy:
       - ./k8s/*
 portForward:
   - resourceType: service
-    resourceName: react-java-s3-dataset-app
+    resourceName: react-java-dataset-app
     port: 8080
     address: 0.0.0.0
     localPort: 4503
