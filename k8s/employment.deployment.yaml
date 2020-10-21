@@ -28,5 +28,5 @@ spec:
             value: "8080"
           - name: APPLICATION_NAME
             value: "react-java-dataset-app"
-          # - name: EMPLOYMENT_DATASET_URL
-          #   value: "/opt/app/employment_dataset/employment-us/data/aat1.csv"
+          - name: EMPLOYMENT_DATASET_URL
+            value: "/opt/app/employment_dataset/employment-us/data/aat1.csv"
